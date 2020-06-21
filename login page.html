@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 0px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 20%;
+  padding: 10px 10px;
+  margin: 8px 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 10px;
+  margin: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 20%;
+}
+
+.container {
+  padding: 10px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body align = "center">
+
+<h2>Login Form</h2>
+
+<form action="/action_page.php">
+  <div class="imgcontainer">
+    <img src="Pics\logo.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+    <label for="psw"><b>Password</b></label>
+	<input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+    <button type="submit" ><a href="Cal.html">Log IN</button>
+    
+    <label>
+     <br> <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <br><a href="New User.html"><p align = "center">SIGN UP!</p></a>
+
+    <span class="psw">Forgot <a href="forgotpass.html">password?</a></span>
+  </div>
+
+  
+    
+ 
+</form>
+
+</body>
+</html>
